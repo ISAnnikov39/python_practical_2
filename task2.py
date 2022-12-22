@@ -6,6 +6,9 @@
 
 
 n = int(input())
-
-for i in range(n):
-    print (i**2, end=' ')
+factorial = 1
+factorial_list = []
+for i in range(1,n+1):
+    factorial *= i
+    factorial_list.append(factorial)
+print(factorial_list)
